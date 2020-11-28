@@ -1,7 +1,7 @@
 <template>
     <div style="margin-right: 350px">
       <img class="life-icon" alt src="http://www.tiantang6.com/m/moban/1/img/spjj.gif">
-      <div style="background-color: #ececec; padding: 20px; width: 200%">
+      <div style="background-color: #ececec; padding: 5px; width: 200%">
         <a-row :gutter="autoAdjustOverflow">
           <a-col :span="8">
             <a-card title="Card title" :bordered="false">

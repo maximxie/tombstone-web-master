@@ -8,11 +8,11 @@
               <img
                 slot="cover"
                 alt="example"
-                src="http://localhost:8080/static/images/03.jpg"
+                src="http://localhost:8081/static/images/03.jpg"
               />
               <a-card-meta title="相册1">
                 <template slot="description">
-                  <a href="/people">点击查看</a>
+                  <a href="/people/people-picture-1">点击查看</a>
                 </template>
               </a-card-meta>
             </a-card>
@@ -22,7 +22,7 @@
               <img
                 slot="cover"
                 alt="example"
-                src="http://localhost:8080/static/images/03.jpg"
+                src="http://localhost:8081/static/images/03.jpg"
               />
               <a-card-meta title="相册1">
                 <template slot="description">
