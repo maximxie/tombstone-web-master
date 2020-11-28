@@ -71,7 +71,7 @@ export default {
       ],
       submitting: false,
       value: '',
-      name:'',
+      name: '',
       moment,
     };
   },
@@ -95,7 +95,7 @@ export default {
           ...this.comments,
         ];
         this.value = '';
-        this.name = '';
+        this.name = '@@@';
       }, 1000);
     },
     handleChange(e) {

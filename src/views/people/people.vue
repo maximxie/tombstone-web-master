@@ -1,14 +1,43 @@
 <template>
   <div class="people">
     <div class="bg"></div>
-    <div class="menu-item">
-      <router-link to="/people">生平简介</router-link>
-      <router-link to="/people/jidian">祭奠留言</router-link>
-      <router-link to="/people/picture">纪念相册</router-link>
-      <router-link to="/people/article">纪念文章</router-link>
-      <router-link to="/people/video">纪念视频</router-link>
-      <router-link to="/">返回首页</router-link>
-    </div>
+      <a-menu
+        v-model="current"
+        mode="horizontal"
+        style="display: flex;justify-content:center; color:#451A12"
+      >
+        <a-menu-item key="people">
+          <router-link to="/people">
+            <a-icon type="profile" />生平简介
+          </router-link>
+        </a-menu-item>
+        <a-menu-item key="jidian">
+          <router-link to="/people/jidian">
+            <a-icon type="message" />祭奠留言
+          </router-link>
+        </a-menu-item>
+        <a-menu-item key="picture">
+          <router-link to="/people/picture">
+            <a-icon type="picture" />纪念相册
+          </router-link>
+        </a-menu-item>
+        <a-menu-item key="article">
+          <router-link to="/people/article">
+            <a-icon type="heart" />纪念文章
+          </router-link>
+        </a-menu-item>
+        <a-menu-item key="video">
+          <router-link to="/people/video">
+            <a-icon type="play-square" />纪念视频
+          </router-link>
+        </a-menu-item>
+        <a-menu-item key="return">
+          <router-link to="/">
+            <a-icon type="rollback" />返回首页
+          </router-link>
+        </a-menu-item>
+      </a-menu>
+
     <div class="content">
       <div class="people-name">樊晓宇</div>
       <div class="people-avatar"><img alt src="/static/images/03.jpg" /></div>
@@ -38,7 +67,8 @@ export default {
         {img: 'http://www.tiantang6.com/images/tag15.gif', text: '扫墓'},
         {img: 'http://www.tiantang6.com/images/tag2.gif', text: '献歌'},
         {img: 'http://www.tiantang6.com/images/tag16.gif', text: '留言'}
-      ]
+      ],
+      current: ["people"]
     }
   }
 }
