@@ -84,9 +84,10 @@ const routes = [
         path:"article",
         name:"PeopleArticle",
         component: () => import("@/views/people/people-article")
-      },{path:"detail",
+      },{
+        path:"detail",
         name:"PeopleArticleDe",
-        component:()=>import("@/views/people/people-article-de")
+        component:() => import("@/views/people/people-article-de")
       }
     ]
   }
